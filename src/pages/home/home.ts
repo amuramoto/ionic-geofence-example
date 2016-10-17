@@ -47,7 +47,6 @@ export class HomePage {
   }
 
   startGeofence () {
-    console.log('started');
     Geofence.initialize().then(
       () => Geolocation.getCurrentPosition().then(
         location => this.setGeofence(location)
